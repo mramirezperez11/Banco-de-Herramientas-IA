@@ -1,0 +1,78 @@
+/* Archivo: styles.css */
+
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4ff;
+    color: #333;
+}
+
+/* Estilo para la cabecera */
+header {
+    background-color: #003366;
+    color: #f0e130;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #00509e;
+}
+
+nav a {
+    padding: 14px 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #f0e130;
+    color: black;
+}
+
+/* Secciones */
+main {
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+}
+
+.category h2 {
+    color: #003366;
+}
+
+/* Herramientas */
+.tool {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    background-color: #e0efff;
+}
+
+.tool h3 {
+    color: #00509e;
+}
+
+.tool a {
+    display: block;
+    margin-top: 5px;
+    color: #003366;
+    text-decoration: none;
+}
+
+.tool a:hover {
+    text-decoration: underline;
+}
