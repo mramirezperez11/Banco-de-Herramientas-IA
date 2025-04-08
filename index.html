@@ -6,6 +6,56 @@
     <title>Banco de Herramientas de IA</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .tool {
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+            .category h2 {
+                font-size: 1.5rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+            main {
+                padding: 10px;
+            }
+            .tool a {
+                padding: 8px 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            nav {
+                display: block;
+                text-align: center;
+            }
+            .tool {
+                padding: 8px;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            nav a {
+                display: block;
+                padding: 5px 0;
+                font-size: 0.85rem;
+            }
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
