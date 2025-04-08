@@ -1,513 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Banco de Herramientas de IA</title>
-<link rel="stylesheet" href="styles.css">
-<style>
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f0f8ff;
-color: #333;
-}
-header {
-background-color: #007bff;
-color: #fff;
-padding: 20px;
-text-align: center;
-}
-header h1 {
-margin: 0;
-font-size: 2.5rem;
-font-weight: bold;
-text-shadow: 2px 2px #0056b3;
-}
-header p {
-margin: 10px 0 0;
-font-size: 1.2rem;
-}
-nav {
-background-color: #ffcc00;
-padding: 10px;
-display: flex;
-justify-content: center;
-gap: 15px;
-}
-nav a {
-color: #0056b3;
-text-decoration: none;
-font-weight: bold;
-font-size: 1.1rem;
-}
-nav a:hover {
-text-decoration: underline;
-}
-main {
-padding: 20px;
-}
-.category {
-margin-bottom: 30px;
-}
-.category h2 {
-font-size: 1.8rem;
-color: #0056b3;
-margin-bottom: 10px;
-border-bottom: 2px solid #007bff;
-display: inline-block;
-}
-.tool {
-background-color: #fff;
-border: 1px solid #ddd;
-border-radius: 10px;
-padding: 15px;
-margin-bottom: 20px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-transition: transform 0.2s;
-}
-.tool:hover {
-transform: translateY(-5px);
-}
-.tool h3 {
-margin: 0 0 10px;
-color: #007bff;
-}
-.tool p {
-margin: 5px 0;
-}
-.tool a {
-display: inline-block;
-margin-top: 10px;
-color: #fff;
-background-color: #007bff;
-padding: 10px 15px;
-border-radius: 5px;
-text-decoration: none;
-}
-.tool a:hover {
-background-color: #0056b3;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Herramientas de IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px #0056b3;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #ffcc00;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        .category {
+            margin-bottom: 30px;
+        }
+        .category h2 {
+            font-size: 1.8rem;
+            color: #0056b3;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+        }
+        .tool {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .tool:hover {
+            transform: translateY(-5px);
+        }
+        .tool h3 {
+            margin: 0 0 10px;
+            color: #007bff;
+        }
+        .tool p {
+            margin: 5px 0;
+        }
+        .tool a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .tool a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #f0f8ff;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        .author-info {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-<header>
-<h1>Miravalle</h1>
-<p>Banco de Herramientas de IA para Potenciar tu Aprendizaje</p>
-</header>
+    <header>
+        <h1>Miravalle</h1>
+        <p>Banco de Herramientas de IA para Potenciar tu Aprendizaje</p>
+    </header>
 
-<nav>
-<a href="#idiomas">Idiomas</a>
-<a href="#productividad">Productividad</a>
-<a href="#soporte">Soporte Académico</a>
-<a href="#creatividad">Creatividad</a>
-<a href="#chatbots">Chatbots</a>
-<a href="#imagenes">Imágenes</a>
-<a href="#presentaciones">Presentaciones</a>
-<a href="#video">Video</a>
-<a href="#audio">Audio</a>
-<a href="#educacion">Educación</a>
-<a href="#diagramas">Diagramas de Flujo</a>
+    <nav>
+        <a href="#idiomas">Idiomas</a>
+        <a href="#productividad">Productividad</a>
+        <a href="#soporte">Soporte Académico</a>
+        <a href="#creatividad">Creatividad</a>
+        <a href="#chatbots">Chatbots</a>
+        <a href="#imagenes">Imágenes</a>
+        <a href="#presentaciones">Presentaciones</a>
+        <a href="#video">Video</a>
+        <a href="#audio">Audio</a>
+        <a href="#educacion">Educación</a>
+        <a href="#diagramas">Diagramas de Flujo</a>
+    </nav>
 
+    <main>
+        <!-- Aquí se agregarán todas las secciones con sus herramientas correspondientes -->
 
-</nav>
+        <!-- Sección: Idiomas -->
+        <section id="idiomas" class="category">
+            <h2>Idiomas</h2>
+            <div class="tool">
+                <h3>Duolingo</h3>
+                <p>Descripción: Plataforma para aprender idiomas con ejercicios interactivos y metas diarias.</p>
+                <p>Ventajas: Interfaz amigable, amplios idiomas disponibles, y ejercicios prácticos.</p>
+                <p>Limitaciones: Funcionalidades avanzadas requieren la versión premium.</p>
+                <a href="https://www.duolingo.com" target="_blank">Ir a Duolingo</a>
+            </div>
+            <div class="tool">
+                <h3>Grammarly</h3>
+                <p>Descripción: Herramienta para mejorar la escritura en inglés mediante correcciones gramaticales y de estilo.</p>
+                <p>Ventajas: Ayuda a evitar errores comunes y mejora la claridad de los textos.</p>
+                <p>Limitaciones: Algunas sugerencias avanzadas están disponibles solo en la versión premium.</p>
+                <a href="https://www.grammarly.com" target="_blank">Ir a Grammarly</a>
+            </div>
+        </section>
 
-<main>
-<section id="idiomas" class="category">
-<h2>Herramientas para Aprender Idiomas</h2>
+        <!-- Sección: Productividad -->
+        <section id="productividad" class="category">
+            <h2>Productividad</h2>
+            <div class="tool">
+                <h3>Notion AI</h3>
+                <p>Descripción: Plataforma para la gestión de proyectos y toma de notas con IA.</p>
+                <p>Ventajas: Permite organizar tareas y automatizar procesos repetitivos.</p>
+                <p>Limitaciones: La curva de aprendizaje inicial puede ser pronunciada.</p>
+                <a href="https://www.notion.so" target="_blank">Ir a Notion AI</a>
+            </div>
+            <div class="tool">
+                <h3>Trello</h3>
+                <p>Descripción: Herramienta de organización visual basada en tableros para la gestión de tareas.</p>
+                <p>Ventajas: Ideal para trabajo en equipo y seguimiento de proyectos.</p>
+                <p>Limitaciones: Algunas funciones avanzadas requieren suscripción.</p>
+                <a href="https://trello.com" target="_blank">Ir a Trello</a>
+            </div>
+        </section>
 
-<div class="tool">
-<h3>Duolingo</h3>
-<p><strong>Descripción:</strong> Plataforma para aprender idiomas con ejercicios interactivos y metas diarias.</p>
-<p><strong>Ventajas:</strong> Interfaz amigable, amplios idiomas disponibles, y ejercicios prácticos.</p>
-<p><strong>Limitaciones:</strong> Funcionalidades avanzadas requieren la versión premium.</p>
-<a href="https://www.duolingo.com" target="_blank">Ir a Duolingo</a>
-</div>
+        <!-- Sección: Soporte Académico -->
+        <section id="soporte" class="category">
+            <h2>Soporte Académico</h2>
+            <div class="tool">
+                <h3>Khan Academy</h3>
+                <p>Descripción: Plataforma educativa gratuita con lecciones en video y ejercicios interactivos.</p>
+                <p>Ventajas: Cobertura de múltiples materias y recursos gratuitos.</p>
+                <p>Limitaciones: Algunos cursos están solo en inglés.</p>
+                <a href="https://www.khanacademy.org" target="_blank">Ir a Khan Academy</a>
+            </div>
+            <div class="tool">
+                <h3>Quizlet</h3>
+                <p>Descripción: Herramienta para crear tarjetas de estudio interactivas y realizar repasos.</p>
+                <p>Ventajas: Personalización y variedad de modos de estudio.</p>
+                <p>Limitaciones: Algunas funciones avanzadas son de pago.</p>
+                <a href="https://quizlet.com" target="_blank">Ir a Quizlet</a>
+            </div>
+        </section>
 
-<div class="tool">
-<h3>Grammarly</h3>
-<p><strong>Descripción:</strong> Herramienta para mejorar la escritura en inglés mediante correcciones gramaticales y de estilo.</p>
-<p><strong>Ventajas:</strong> Ayuda a evitar errores comunes y mejora la claridad de los textos.</p>
-<p><strong>Limitaciones:</strong> Algunas sugerencias avanzadas están disponibles solo en la versión premium.</p>
-<a href="https://www.grammarly.com" target="_blank">Ir a Grammarly</a>
-</div>
-</section>
+        <!-- Sección: Creatividad -->
+        <section id="creatividad" class="category">
+            <h2>Creatividad</h2>
+            <div class="tool">
+                <h3>DALL-E</h3>
+                <p>Descripción: Generador de imágenes basado en texto mediante IA.</p>
+                <p>Ventajas: Ideal para proyectos artísticos y visuales.</p>
+                <p>Limitaciones: Algunas funcionalidades avanzadas pueden requerir créditos.</p>
+                <a href="https://openai.com/dall-e" target="_blank">Ir a DALL-E</a>
+            </div>
+            <div class="tool">
+                <h3>Canva</h3>
+                <p>Descripción: Plataforma de diseño gráfico fácil de usar con plantillas prediseñadas.</p>
+                <p>Ventajas: Herramienta intuitiva y versátil para cualquier proyecto creativo.</p>
+                <p>Limitaciones: Algunas plantillas y recursos son de pago.</p>
+                <a href="https://www.canva.com" target="_blank">Ir a Canva</a>
+            </div>
+        </section>
+            <!-- Sección: Chatbots -->
+        <section id="chatbots" class="category">
+            <h2>Chatbots</h2>
+            <div class="tool">
+                <h3>ChatGPT</h3>
+                <p>Descripción: Chatbot de inteligencia artificial desarrollado por OpenAI, diseñado para responder preguntas y generar texto.</p>
+                <p>Ventajas: Amplia base de conocimientos, interacción fluida y capacidad de redacción avanzada.</p>
+                <p>Limitaciones: Puede generar respuestas incorrectas y no siempre tiene acceso a la información más reciente.</p>
+                <a href="https://chat.openai.com" target="_blank">Ir a ChatGPT</a>
+            </div>
+            <div class="tool">
+                <h3>Gemini</h3>
+                <p>Descripción: Asistente de IA desarrollado por Google con integración en múltiples plataformas.</p>
+                <p>Ventajas: Acceso a datos en tiempo real y excelente integración con servicios de Google.</p>
+                <p>Limitaciones: Algunas funciones avanzadas requieren suscripción y acceso limitado en ciertas regiones.</p>
+                <a href="https://gemini.google.com" target="_blank">Ir a Gemini</a>
+            </div>
+            <div class="tool">
+                <h3>Copilot</h3>
+                <p>Descripción: Asistente de IA integrado en Microsoft 365, diseñado para optimizar flujos de trabajo y productividad.</p>
+                <p>Ventajas: Integración nativa con Microsoft Office y generación de texto asistida.</p>
+                <p>Limitaciones: Disponible principalmente para usuarios empresariales y con costo adicional.</p>
+                <a href="https://www.microsoft.com/copilot" target="_blank">Ir a Copilot</a>
+            </div>
+            <div class="tool">
+                <h3>Claude AI</h3>
+                <p>Descripción: Chatbot de IA desarrollado por Anthropic, enfocado en conversaciones naturales y seguras.</p>
+                <p>Ventajas: Gran capacidad para procesar lenguaje natural y prioriza la seguridad en respuestas.</p>
+                <p>Limitaciones: No es tan ampliamente adoptado como otras alternativas y tiene menor personalización.</p>
+                <a href="https://www.anthropic.com" target="_blank">Ir a Claude AI</a>
+            </div>
+            <div class="tool">
+                <h3>DeepSeek</h3>
+                <p>Descripción: Chatbot de IA avanzado especializado en procesamiento de lenguaje natural.</p>
+                <p>Ventajas: Precisión en respuestas técnicas y científicas, aprendizaje continuo.</p>
+                <p>Limitaciones: Puede requerir acceso premium para funcionalidades avanzadas.</p>
+                <a href="https://deepseek.com" target="_blank">Ir a DeepSeek</a>
+            </div>
+            <div class="tool">
+                <h3>Perplexity</h3>
+                <p>Descripción: Chatbot de IA que responde preguntas con información verificada y enlaces a fuentes.</p>
+                <p>Ventajas: Proporciona respuestas con referencias, es rápido y fácil de usar.</p>
+                <p>Limitaciones: Algunas funciones avanzadas requieren cuenta premium.</p>
+                <a href="https://www.perplexity.ai" target="_blank">Ir a Perplexity</a>
+            </div>
+        </section>
+            <!-- Sección: Imágenes -->
+        <section id="imagenes" class="category">
+            <h2>Imágenes</h2>
+            <div class="tool">
+                <h3>Leonardo AI</h3>
+                <p>Descripción: Herramienta de generación de imágenes mediante IA, especializada en ilustraciones y arte digital.</p>
+                <p>Ventajas: Alta calidad en imágenes generadas y personalización avanzada.</p>
+                <p>Limitaciones: Puede requerir tiempo de procesamiento y créditos para uso extendido.</p>
+                <a href="https://leonardo.ai" target="_blank">Ir a Leonardo AI</a>
+            </div>
+            <div class="tool">
+                <h3>Adobe Express</h3>
+                <p>Descripción: Plataforma de diseño gráfico fácil de usar con inteligencia artificial integrada.</p>
+                <p>Ventajas: Herramienta intuitiva con plantillas prediseñadas.</p>
+                <p>Limitaciones: Algunas funciones avanzadas requieren suscripción.</p>
+                <a href="https://www.adobe.com/express" target="_blank">Ir a Adobe Express</a>
+            </div>
+            <div class="tool">
+                <h3>Microsoft Designer</h3>
+                <p>Descripción: Aplicación de diseño gráfico impulsada por IA para crear contenido visual de calidad.</p>
+                <p>Ventajas: Integración con Microsoft 365 y facilidad de uso.</p>
+                <p>Limitaciones: Requiere cuenta de Microsoft y acceso a internet.</p>
+                <a href="https://designer.microsoft.com" target="_blank">Ir a Microsoft Designer</a>
+            </div>
+            <div class="tool">
+                <h3>Flair</h3>
+                <p>Descripción: Plataforma de IA para branding y generación de logotipos.</p>
+                <p>Ventajas: Ideal para emprendedores y pequeñas empresas.</p>
+                <p>Limitaciones: Personalización limitada en la versión gratuita.</p>
+                <a href="https://flair.ai" target="_blank">Ir a Flair</a>
+            </div>
+        </section>
+            <!-- Sección: Presentaciones -->
+        <section id="presentaciones" class="category">
+            <h2>Presentaciones</h2>
+            <div class="tool">
+                <h3>Slides GPT</h3>
+                <p>Descripción: Herramienta de IA que permite generar presentaciones rápidamente a partir de texto.</p>
+                <p>Ventajas: Ahorro de tiempo en la creación de diapositivas, facilidad de uso.</p>
+                <p>Limitaciones: Algunas funciones avanzadas requieren suscripción.</p>
+                <a href="https://www.slidesgpt.com" target="_blank">Ir a Slides GPT</a>
+            </div>
+            <div class="tool">
+                <h3>Gamma</h3>
+                <p>Descripción: Plataforma de IA para la creación de presentaciones visuales con diseño atractivo.</p>
+                <p>Ventajas: Ofrece plantillas de alta calidad y diseño automatizado.</p>
+                <p>Limitaciones: Puede requerir ajustes manuales para mayor personalización.</p>
+                <a href="https://gamma.app" target="_blank">Ir a Gamma</a>
+            </div>
+            <div class="tool">
+                <h3>Slides AI</h3>
+                <p>Descripción: Extensión para Google Slides que automatiza la generación de contenido para diapositivas.</p>
+                <p>Ventajas: Integración nativa con Google Slides, generación automática de contenido relevante.</p>
+                <p>Limitaciones: Dependencia de Google Workspace para su uso.</p>
+                <a href="https://www.slidesai.io" target="_blank">Ir a Slides AI</a>
+            </div>
+            <div class="tool">
+                <h3>CuriPod</h3>
+                <p>Descripción: Herramienta de IA para la creación de presentaciones interactivas en el ámbito educativo.</p>
+                <p>Ventajas: Ideal para docentes y estudiantes, permite generar contenido interactivo.</p>
+                <p>Limitaciones: Puede requerir conocimientos previos para aprovechar todas sus funciones.</p>
+                <a href="https://www.curipod.com" target="_blank">Ir a CuriPod</a>
+            </div>
+            <div class="tool">
+                <h3>Wepik</h3>
+                <p>Descripción: Plataforma de diseño gráfico con IA que facilita la creación de diapositivas y contenido visual.</p>
+                <p>Ventajas: Interfaz intuitiva, múltiples opciones de personalización.</p>
+                <p>Limitaciones: Algunas funciones avanzadas requieren versión premium.</p>
+                <a href="https://wepik.com" target="_blank">Ir a Wepik</a>
+            </div>
+        </section>
+            <!-- Sección: Video y Animación -->
+        <section id="video" class="category">
+            <h2>Video y Animación</h2>
+            <div class="tool">
+                <h3>HeyGen</h3>
+                <p>Descripción: Plataforma de IA que permite generar videos personalizados con avatares digitales.</p>
+                <p>Ventajas: Creación rápida de contenido en video sin necesidad de actores reales.</p>
+                <p>Limitaciones: Opciones avanzadas requieren suscripción.</p>
+                <a href="https://www.heygen.com" target="_blank">Ir a HeyGen</a>
+            </div>
+            <div class="tool">
+                <h3>Vizard</h3>
+                <p>Descripción: Herramienta de edición de video basada en IA, optimizada para creación de contenido.</p>
+                <p>Ventajas: Edición automatizada y herramientas avanzadas de procesamiento.</p>
+                <p>Limitaciones: Puede requerir ajustes manuales para mejorar los resultados.</p>
+                <a href="https://www.vizard.ai" target="_blank">Ir a Vizard</a>
+            </div>
+            <div class="tool">
+                <h3>Quicktube</h3>
+                <p>Descripción: Generador de contenido en video para YouTube con IA, basado en temas específicos.</p>
+                <p>Ventajas: Ahorra tiempo en la producción de contenido para plataformas digitales.</p>
+                <p>Limitaciones: Puede necesitar ajustes creativos manuales.</p>
+                <a href="#" target="_blank">Ir a Quicktube</a>
+            </div>
+            <div class="tool">
+                <h3>Lumen 5</h3>
+                <p>Descripción: Herramienta de IA para transformar artículos y textos en videos atractivos.</p>
+                <p>Ventajas: Ideal para marketing digital y contenido educativo.</p>
+                <p>Limitaciones: Funciones avanzadas solo disponibles en la versión de pago.</p>
+                <a href="https://www.lumen5.com" target="_blank">Ir a Lumen 5</a>
+            </div>
+            <div class="tool">
+                <h3>Fliki</h3>
+                <p>Descripción: Plataforma de generación de videos con narraciones automatizadas y sincronización de voz.</p>
+                <p>Ventajas: Facilita la creación de contenido multimedia sin necesidad de locución profesional.</p>
+                <p>Limitaciones: Calidad de voz sintética puede no ser perfecta en todos los casos.</p>
+                <a href="https://www.fliki.ai" target="_blank">Ir a Fliki</a>
+            </div>
+        </section>
+            <!-- Sección: Audio -->
+        <section id="audio" class="category">
+            <h2>Audio</h2>
+            <div class="tool">
+                <h3>TTS Maker</h3>
+                <p>Descripción: Herramienta de conversión de texto a voz con múltiples opciones de voces y acentos.</p>
+                <p>Ventajas: Compatible con varios idiomas y ofrece voces naturales.</p>
+                <p>Limitaciones: Algunas voces avanzadas requieren suscripción.</p>
+                <a href="https://ttsmp3.com" target="_blank">Ir a TTS Maker</a>
+            </div>
+            <div class="tool">
+                <h3>Music FX</h3>
+                <p>Descripción: Plataforma de IA para la generación y edición de efectos de sonido y música.</p>
+                <p>Ventajas: Amplia biblioteca de efectos de sonido y fácil de usar.</p>
+                <p>Limitaciones: Algunas funciones avanzadas pueden requerir pago.</p>
+                <a href="https://www.musicfx.com" target="_blank">Ir a Music FX</a>
+            </div>
+            <div class="tool">
+                <h3>Murf</h3>
+                <p>Descripción: Generador de voz basado en IA para narraciones profesionales y contenido multimedia.</p>
+                <p>Ventajas: Voces realistas y personalizables, ideal para videos y podcasts.</p>
+                <p>Limitaciones: Uso gratuito limitado en duración de clips.</p>
+                <a href="https://www.murf.ai" target="_blank">Ir a Murf</a>
+            </div>
+            <div class="tool">
+                <h3>ElevenLabs</h3>
+                <p>Descripción: Plataforma de IA especializada en síntesis de voz realista y clonación de voz.</p>
+                <p>Ventajas: Alta fidelidad en reproducción de voz y múltiples opciones de personalización.</p>
+                <p>Limitaciones: Algunos modelos de voz requieren licencia premium.</p>
+                <a href="https://elevenlabs.io" target="_blank">Ir a ElevenLabs</a>
+            </div>
+            <div class="tool">
+                <h3>MyEdit</h3>
+                <p>Descripción: Herramienta de edición de audio basada en IA para mejorar calidad de sonido y reducir ruido.</p>
+                <p>Ventajas: Elimina ruido de fondo y mejora la claridad de grabaciones.</p>
+                <p>Limitaciones: Algunas funciones avanzadas están bloqueadas en la versión gratuita.</p>
+                <a href="https://www.myedit.com" target="_blank">Ir a MyEdit</a>
+            </div>
+        </section>
+    </main>
 
-<section id="productividad" class="category">
-<h2>Herramientas para Productividad</h2>
-
-<div class="tool">
-<h3>Notion AI</h3>
-<p><strong>Descripción:</strong> Plataforma para la gestión de proyectos y toma de notas con funcionalidades de inteligencia artificial.</p>
-<p><strong>Ventajas:</strong> Permite organizar tareas y automatizar procesos repetitivos.</p>
-<p><strong>Limitaciones:</strong> La curva de aprendizaje inicial puede ser pronunciada.</p>
-<a href="https://www.notion.so" target="_blank">Ir a Notion</a>
-</div>
-
-<div class="tool">
-<h3>Trello</h3>
-<p><strong>Descripción:</strong> Herramienta de organización visual basada en tableros para la gestión de tareas.</p>
-<p><strong>Ventajas:</strong> Ideal para trabajo en equipo y seguimiento de proyectos.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas requieren suscripción.</p>
-<a href="https://trello.com" target="_blank">Ir a Trello</a>
-</div>
-</section>
-
-<section id="soporte" class="category">
-<h2>Herramientas de Soporte Académico</h2>
-
-<div class="tool">
-<h3>Khan Academy</h3>
-<p><strong>Descripción:</strong> Plataforma educativa gratuita con lecciones en video y ejercicios interactivos.</p>
-<p><strong>Ventajas:</strong> Cobertura de múltiples materias y recursos gratuitos.</p>
-<p><strong>Limitaciones:</strong> Algunos cursos están solo en inglés.</p>
-<a href="https://www.khanacademy.org" target="_blank">Ir a Khan Academy</a>
-</div>
-
-<div class="tool">
-<h3>Quizlet</h3>
-<p><strong>Descripción:</strong> Herramienta para crear tarjetas de estudio interactivas y realizar repasos.</p>
-<p><strong>Ventajas:</strong> Personalización y variedad de modos de estudio.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas son de pago.</p>
-<a href="https://quizlet.com" target="_blank">Ir a Quizlet</a>
-</div>
-</section>
-
-<section id="creatividad" class="category">
-<h2>Herramientas para la Creatividad</h2>
-
-<div class="tool">
-<h3>DALL-E</h3>
-<p><strong>Descripción:</strong> Generador de imágenes basado en texto mediante IA.</p>
-<p><strong>Ventajas:</strong> Ideal para proyectos artísticos y visuales.</p>
-<p><strong>Limitaciones:</strong> Algunas funcionalidades avanzadas pueden requerir créditos.</p>
-<a href="https://openai.com/dall-e" target="_blank">Ir a DALL-E</a>
-</div>
-
-<div class="tool">
-<h3>Canva</h3>
-<p><strong>Descripción:</strong> Plataforma de diseño gráfico fácil de usar con plantillas prediseñadas.</p>
-<p><strong>Ventajas:</strong> Herramienta intuitiva y versátil para cualquier proyecto creativo.</p>
-<p><strong>Limitaciones:</strong> Algunas plantillas y recursos son de pago.</p>
-<a href="https://www.canva.com" target="_blank">Ir a Canva</a>
-</div>
-
-<section id="chatbots" class="category">
-    <h2>Chatbots y Texto</h2>
-
-<div class="tool">
-<h3>ChatGPT</h3>
-<p><strong>Descripción:</strong> Chatbot de inteligencia artificial desarrollado por OpenAI, diseñado para responder preguntas y generar texto.</p>
-<p><strong>Ventajas:</strong> Amplia base de conocimientos, interacción fluida y capacidad de redacción avanzada.</p>
-<p><strong>Limitaciones:</strong> Puede generar respuestas incorrectas y no siempre tiene acceso a la información más reciente.</p>
-<a href="https://chat.openai.com" target="_blank">Ir a ChatGPT</a>
-</div>
-
-<div class="tool">
-<h3>Gemini</h3>
-<p><strong>Descripción:</strong> Asistente de IA desarrollado por Google con integración en múltiples plataformas.</p>
-<p><strong>Ventajas:</strong> Acceso a datos en tiempo real y excelente integración con servicios de Google.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas requieren suscripción y acceso limitado en ciertas regiones.</p>
-<a href="https://gemini.google.com" target="_blank">Ir a Gemini</a>
-</div>
-
-<div class="tool">
-<h3>Copilot</h3>
-<p><strong>Descripción:</strong> Asistente de IA integrado en Microsoft 365, diseñado para optimizar flujos de trabajo y productividad.</p>
-<p><strong>Ventajas:</strong> Integración nativa con Microsoft Office y generación de texto asistida.</p>
-<p><strong>Limitaciones:</strong> Disponible principalmente para usuarios empresariales y con costo adicional.</p>
-<a href="https://www.microsoft.com/copilot" target="_blank">Ir a Copilot</a>
-</div>
-
-<div class="tool">
-<h3>Claude AI</h3>
-<p><strong>Descripción:</strong> Chatbot de IA desarrollado por Anthropic, enfocado en conversaciones naturales y seguras.</p>
-<p><strong>Ventajas:</strong> Gran capacidad para procesar lenguaje natural y prioriza la seguridad en respuestas.</p>
-<p><strong>Limitaciones:</strong> No es tan ampliamente adoptado como otras alternativas y tiene menor personalización.</p>
-<a href="https://www.anthropic.com" target="_blank">Ir a Claude AI</a>
-</div>
-
-<div class="tool">
-<h3>DeepSeek</h3>
-<p><strong>Descripción:</strong> Chatbot de IA avanzado especializado en procesamiento de lenguaje natural.</p>
-<p><strong>Ventajas:</strong> Precisión en respuestas técnicas y científicas, aprendizaje continuo.</p>
-<p><strong>Limitaciones:</strong> Puede requerir acceso premium para funcionalidades avanzadas.</p>
-<a href="https://deepseek.com" target="_blank">Ir a DeepSeek</a>
-</div>
-
-<div class="tool">
-<h3>Perplexity</h3>
-<p><strong>Descripción:</strong> Chatbot de IA que responde preguntas con información verificada y enlaces a fuentes.</p>
-<p><strong>Ventajas:</strong> Proporciona respuestas con referencias, es rápido y fácil de usar.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas requieren cuenta premium.</p>
-<a href="https://www.perplexity.ai" target="_blank">Ir a Perplexity</a>
-</div>
-
-
-<section id="Creación de Imágenes" class="category">
-<h2>Imágenes</h2>
-
-<div class="tool">
-    <h3>Leonardo AI</h3>
-    <p><strong>Descripción:</strong> Herramienta de generación de imágenes mediante IA, especializada en ilustraciones y arte digital.</p>
-    <p><strong>Ventajas:</strong> Alta calidad en imágenes generadas y personalización avanzada.</p>
-    <p><strong>Limitaciones:</strong> Puede requerir tiempo de procesamiento y créditos para uso extendido.</p>
-    <a href="https://leonardo.ai" target="_blank">Ir a Leonardo AI</a>
-</div>
-
-<div class="tool">
-    <h3>Adobe Express</h3>
-    <p><strong>Descripción:</strong> Plataforma de diseño gráfico fácil de usar con inteligencia artificial integrada.</p>
-    <p><strong>Ventajas:</strong> Herramienta intuitiva con plantillas prediseñadas.</p>
-    <p><strong>Limitaciones:</strong> Algunas funciones avanzadas requieren suscripción.</p>
-    <a href="https://www.adobe.com/express" target="_blank">Ir a Adobe Express</a>
-</div>
-
-<div class="tool">
-    <h3>Microsoft Designer</h3>
-    <p><strong>Descripción:</strong> Aplicación de diseño gráfico impulsada por IA para crear contenido visual de calidad.</p>
-    <p><strong>Ventajas:</strong> Integración con Microsoft 365 y facilidad de uso.</p>
-    <p><strong>Limitaciones:</strong> Requiere cuenta de Microsoft y acceso a internet.</p>
-    <a href="https://designer.microsoft.com" target="_blank">Ir a Microsoft Designer</a>
-</div>
-
-<div class="tool">
-    <h3>Flair</h3>
-    <p><strong>Descripción:</strong> Plataforma de IA para branding y generación de logotipos.</p>
-    <p><strong>Ventajas:</strong> Ideal para emprendedores y pequeñas empresas.</p>
-    <p><strong>Limitaciones:</strong> Personalización limitada en la versión gratuita.</p>
-    <a href="https://flair.ai" target="_blank">Ir a Flair</a>
-</div>
-
-                            
-<section id="presentaciones" class="category">
-<h2>Presentaciones</h2>
-
-<div class="tool">
-<h3>Slides GPT</h3>
-<p><strong>Descripción:</strong> Herramienta de IA que permite generar presentaciones rápidamente a partir de texto.</p>
-<p><strong>Ventajas:</strong> Ahorro de tiempo en la creación de diapositivas, facilidad de uso.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas requieren suscripción.</p>
-<a href="https://www.slidesgpt.com" target="_blank">Ir a Slides GPT</a>
-</div>
-
-<div class="tool">
-<h3>Gamma</h3>
-<p><strong>Descripción:</strong> Plataforma de IA para la creación de presentaciones visuales con diseño atractivo.</p>
-<p><strong>Ventajas:</strong> Ofrece plantillas de alta calidad y diseño automatizado.</p>
-<p><strong>Limitaciones:</strong> Puede requerir ajustes manuales para mayor personalización.</p>
-<a href="https://gamma.app" target="_blank">Ir a Gamma</a>
-</div>
-
-<div class="tool">
-<h3>Slides AI</h3>
-<p><strong>Descripción:</strong> Extensión para Google Slides que automatiza la generación de contenido para diapositivas.</p>
-<p><strong>Ventajas:</strong> Integración nativa con Google Slides, generación automática de contenido relevante.</p>
-<p><strong>Limitaciones:</strong> Dependencia de Google Workspace para su uso.</p>
-<a href="https://www.slidesai.io" target="_blank">Ir a Slides AI</a>
-</div>
-
-<div class="tool">
-<h3>CuriPod</h3>
-<p><strong>Descripción:</strong> Herramienta de IA para la creación de presentaciones interactivas en el ámbito educativo.</p>
-<p><strong>Ventajas:</strong> Ideal para docentes y estudiantes, permite generar contenido interactivo.</p>
-<p><strong>Limitaciones:</strong> Puede requerir conocimientos previos para aprovechar todas sus funciones.</p>
-<a href="https://www.curipod.com" target="_blank">Ir a CuriPod</a>
-</div>
-
-<div class="tool">
-<h3>Wepik</h3>
-<p><strong>Descripción:</strong> Plataforma de diseño gráfico con IA que facilita la creación de diapositivas y contenido visual.</p>
-<p><strong>Ventajas:</strong> Interfaz intuitiva, múltiples opciones de personalización.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas requieren versión premium.</p>
-<a href="https://wepik.com" target="_blank">Ir a Wepik</a>
-</div>
-
-<section id="video" class="category">
-<h2>Video y Animación</h2>
-
-<div class="tool">
-<h3>HeyGen</h3>
-<p><strong>Descripción:</strong> Plataforma de IA que permite generar videos personalizados con avatares digitales.</p>
-<p><strong>Ventajas:</strong> Creación rápida de contenido en video sin necesidad de actores reales.</p>
-<p><strong>Limitaciones:</strong> Opciones avanzadas requieren suscripción.</p>
-<a href="https://www.heygen.com" target="_blank">Ir a HeyGen</a>
-</div>
-
-<div class="tool">
-<h3>Vizard</h3>
-<p><strong>Descripción:</strong> Herramienta de edición de video basada en IA, optimizada para creación de contenido.</p>
-<p><strong>Ventajas:</strong> Edición automatizada y herramientas avanzadas de procesamiento.</p>
-<p><strong>Limitaciones:</strong> Puede requerir ajustes manuales para mejorar los resultados.</p>
-<a href="https://www.vizard.ai" target="_blank">Ir a Vizard</a>
-</div>
-
-<div class="tool">
-<h3>Quicktube</h3>
-<p><strong>Descripción:</strong> Generador de contenido en video para YouTube con IA, basado en temas específicos.</p>
-<p><strong>Ventajas:</strong> Ahorra tiempo en la producción de contenido para plataformas digitales.</p>
-<p><strong>Limitaciones:</strong> Puede necesitar ajustes creativos manuales.</p>
-<a href="#" target="_blank">Ir a Quicktube</a>
-</div>
-
-<div class="tool">
-<h3>Lumen 5</h3>
-<p><strong>Descripción:</strong> Herramienta de IA para transformar artículos y textos en videos atractivos.</p>
-<p><strong>Ventajas:</strong> Ideal para marketing digital y contenido educativo.</p>
-<p><strong>Limitaciones:</strong> Funciones avanzadas solo disponibles en la versión de pago.</p>
-<a href="https://www.lumen5.com" target="_blank">Ir a Lumen 5</a>
-</div>
-
-<div class="tool">
-<h3>Fliki</h3>
-<p><strong>Descripción:</strong> Plataforma de generación de videos con narraciones automatizadas y sincronización de voz.</p>
-<p><strong>Ventajas:</strong> Facilita la creación de contenido multimedia sin necesidad de locución profesional.</p>
-<p><strong>Limitaciones:</strong> Calidad de voz sintética puede no ser perfecta en todos los casos.</p>
-<a href="https://www.fliki.ai" target="_blank">Ir a Fliki</a>
-</div>
-
-
-<section id="audio" class="category">
-<h2>Audio</h2>
-
-<div class="tool">
-<h3>TTS Maker</h3>
-<p><strong>Descripción:</strong> Herramienta de conversión de texto a voz con múltiples opciones de voces y acentos.</p>
-<p><strong>Ventajas:</strong> Compatible con varios idiomas y ofrece voces naturales.</p>
-<p><strong>Limitaciones:</strong> Algunas voces avanzadas requieren suscripción.</p>
-<a href="https://ttsmp3.com" target="_blank">Ir a TTS Maker</a>
-</div>
-
-<div class="tool">
-<h3>Music FX</h3>
-<p><strong>Descripción:</strong> Plataforma de IA para la generación y edición de efectos de sonido y música.</p>
-<p><strong>Ventajas:</strong> Amplia biblioteca de efectos de sonido y fácil de usar.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas pueden requerir pago.</p>
-<a href="https://www.musicfx.com" target="_blank">Ir a Music FX</a>
-</div>
-
-<div class="tool">
-<h3>Murf</h3>
-<p><strong>Descripción:</strong> Generador de voz basado en IA para narraciones profesionales y contenido multimedia.</p>
-<p><strong>Ventajas:</strong> Voces realistas y personalizables, ideal para videos y podcasts.</p>
-<p><strong>Limitaciones:</strong> Uso gratuito limitado en duración de clips.</p>
-<a href="https://www.murf.ai" target="_blank">Ir a Murf</a>
-</div>
-
-<div class="tool">
-<h3>ElevenLabs</h3>
-<p><strong>Descripción:</strong> Plataforma de IA especializada en síntesis de voz realista y clonación de voz.</p>
-<p><strong>Ventajas:</strong> Alta fidelidad en reproducción de voz y múltiples opciones de personalización.</p>
-<p><strong>Limitaciones:</strong> Algunos modelos de voz requieren licencia premium.</p>
-<a href="https://elevenlabs.io" target="_blank">Ir a ElevenLabs</a>
-</div>
-
-<div class="tool">
-<h3>MyEdit</h3>
-<p><strong>Descripción:</strong> Herramienta de edición de audio basada en IA para mejorar calidad de sonido y reducir ruido.</p>
-<p><strong>Ventajas:</strong> Elimina ruido de fondo y mejora la claridad de grabaciones.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas están bloqueadas en la versión gratuita.</p>
-<a href="https://www.myedit.com" target="_blank">Ir a MyEdit</a>
-</div>
-
-<section id="educacion" class="category">
-<h2>Educación</h2>
-
-<div class="tool">
-<h3>Comenio</h3>
-<p><strong>Descripción:</strong> Plataforma de IA diseñada para asistir a docentes en la planificación de clases y creación de material educativo.</p>
-<p><strong>Ventajas:</strong> Facilita la organización de contenidos y optimiza el tiempo de preparación de clases.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas requieren suscripción.</p>
-<a href="https://www.comenio.com" target="_blank">Ir a Comenio</a>
-</div>
-
-<div class="tool">
-<h3>Magic School</h3>
-<p><strong>Descripción:</strong> Herramienta de IA que ayuda en la personalización del aprendizaje para estudiantes.</p>
-<p><strong>Ventajas:</strong> Permite adaptar el contenido a diferentes niveles educativos y necesidades.</p>
-<p><strong>Limitaciones:</strong> Dependencia de la disponibilidad de conexión a internet.</p>
-<a href="https://www.magicschool.ai" target="_blank">Ir a Magic School</a>
-</div>
-
-<div class="tool">
-<h3>Question Well</h3>
-<p><strong>Descripción:</strong> Generador de preguntas de evaluación basado en IA para reforzar el aprendizaje.</p>
-<p><strong>Ventajas:</strong> Ayuda a profesores a crear pruebas y ejercicios en minutos.</p>
-<p><strong>Limitaciones:</strong> La personalización avanzada puede requerir suscripción.</p>
-<a href="https://www.questionwell.com" target="_blank">Ir a Question Well</a>
-</div>
-
-<div class="tool">
-<h3>Padlet</h3>
-<p><strong>Descripción:</strong> Plataforma de colaboración que permite a estudiantes y profesores compartir ideas y contenidos visuales.</p>
-<p><strong>Ventajas:</strong> Fácil de usar, fomenta la colaboración en el aula.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones son de pago.</p>
-<a href="https://www.padlet.com" target="_blank">Ir a Padlet</a>
-</div>
-
-<div class="tool">
-<h3>Parlay</h3>
-<p><strong>Descripción:</strong> Herramienta de IA diseñada para mejorar la participación y el debate en el aula.</p>
-<p><strong>Ventajas:</strong> Fomenta el pensamiento crítico y el aprendizaje activo.</p>
-<p><strong>Limitaciones:</strong> Puede requerir adaptación por parte de los docentes.</p>
-<a href="https://www.parlayideas.com" target="_blank">Ir a Parlay</a>
-</div>
-
-<div class="tool">
-<h3>Scribe</h3>
-<p><strong>Descripción:</strong> Plataforma de IA que ayuda a generar resúmenes automáticos de contenido educativo.</p>
-<p><strong>Ventajas:</strong> Útil para estudiantes que desean estudiar de manera más eficiente.</p>
-<p><strong>Limitaciones:</strong> Puede no capturar siempre el contexto completo del contenido.</p>
-<a href="https://scribehow.com" target="_blank">Ir a Scribe</a>
-</div>
-
-<section id="diagramas" class="category">
-<h2>Diagramas de Flujo</h2>
-
-<div class="tool">
-<h3>Lucidchart AI</h3>
-<p><strong>Descripción:</strong> Herramienta de diagramación con IA para generar automáticamente diagramas de flujo, mapas mentales y organigramas.</p>
-<p><strong>Ventajas:</strong> Plantillas prediseñadas, integración con Google Drive y herramientas colaborativas.</p>
-<p><strong>Limitaciones:</strong> Algunas funciones avanzadas requieren suscripción.</p>
-<a href="https://www.lucidchart.com/" target="_blank">Ir a Lucidchart</a>
-</div>
-
-<div class="tool">
-<h3>Microsoft Visio AI</h3>
-<p><strong>Descripción:</strong> Software de diagramación con inteligencia artificial para automatizar flujos de trabajo y procesos visuales.</p>
-<p><strong>Ventajas:</strong> Compatible con Microsoft 365, permite integración con datos en tiempo real.</p>
-<p><strong>Limitaciones:</strong> Suscripción paga en la mayoría de sus versiones.</p>
-<a href="https://www.microsoft.com/en-us/microsoft-365/visio/" target="_blank">Ir a Microsoft Visio</a>
-</div>
-
-<div class="tool">
-<h3>EdrawMind AI</h3>
-<p><strong>Descripción:</strong> Herramienta de creación de mapas conceptuales y diagramas de flujo con asistencia de IA.</p>
-<p><strong>Ventajas:</strong> IA genera diagramas automáticamente a partir de texto.</p>
-<p><strong>Limitaciones:</strong> No todas las funcionalidades son gratuitas.</p>
-<a href="https://www.edrawsoft.com/edrawmind/" target="_blank">Ir a EdrawMind</a>
-</div>
-
-<div class="tool">
-<h3>Flowcharts AI</h3>
-<p><strong>Descripción:</strong> Plataforma que permite crear diagramas de flujo generados por IA con solo describir el proceso en texto.</p>
-<p><strong>Ventajas:</strong> Creación rápida de diagramas sin necesidad de dibujar manualmente.</p>
-<p><strong>Limitaciones:</strong> Opciones avanzadas solo en versión premium.</p>
-<a href="https://www.flowcharts.ai/" target="_blank">Ir a Flowcharts AI</a>
-</div>
-
-<div class="tool">
-<h3>Whimsical AI</h3>
-<p><strong>Descripción:</strong> Plataforma para diagramas de flujo, wireframes y mapas conceptuales con asistencia de IA.</p>
-<p><strong>Ventajas:</strong> Permite colaboraciones en tiempo real y exportación en múltiples formatos.</p>
-<p><strong>Limitaciones:</strong> La versión gratuita tiene un límite de diagramas.</p>
-<a href="https://whimsical.com/" target="_blank">Ir a Whimsical</a>
-</div>
-</section>
-
-                                        
-</section>
-</main>
+    <footer>
+        <div class="author-info">
+            <p>Proyecto desarrollado por: <strong>Manuel Ramírez Pérez</strong></p>
+            <p>&copy; 2025 - Todos los derechos reservados</p>
+            <p>Contacto: <a href="mailto:mramirezperez11@gmail.com">mramirezperez11@gmail.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>
