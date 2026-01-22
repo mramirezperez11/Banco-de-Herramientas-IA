@@ -9,6 +9,9 @@
 
 ## Frontend (Next.js + Tailwind)
 - **Home:** presenta el MVP y resume flujo de compra, validaciones y paneles.
+- **Login:** formulario de registro e inicio de sesión con almacenamiento de JWT en el navegador.
+- **Compra:** reserva cupos, simula checkout y confirma webhook para emitir tickets.
+- **Tickets:** listado de entradas emitidas por el usuario comprador.
 - **Integración API:** base URL configurable por `NEXT_PUBLIC_API_BASE_URL`.
 
 ## Base de datos (PostgreSQL)

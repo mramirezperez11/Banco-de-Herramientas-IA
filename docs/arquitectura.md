@@ -26,6 +26,8 @@
   - Se valida el aforo disponible y se crea la orden en estado `pending`.
 - **Confirmación de pago:**
   - El webhook marca la orden como `paid` y genera los tickets con QR único.
+- **Checkout simulado:**
+  - Endpoint interno para generar referencia y facilitar pruebas del flujo MVP.
 - **Validación en puerta:**
   - El ticket se bloquea y se marca como `validated`, evitando reuso.
 

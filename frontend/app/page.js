@@ -6,17 +6,17 @@ const quickLinks = [
   {
     title: 'Compra segura',
     description: 'Venta de entradas con confirmación de pago por webhook y QR único.',
-    link: '#comprar'
+    link: '/compra'
   },
   {
     title: 'Control de aforo',
     description: 'Evita doble venta mediante reservas transaccionales en PostgreSQL.',
-    link: '#eventos'
+    link: '/compra'
   },
   {
     title: 'Panel organizadores',
     description: 'Crea eventos y consulta ventas en tiempo real.',
-    link: '#organizador'
+    link: '/login'
   }
 ];
 

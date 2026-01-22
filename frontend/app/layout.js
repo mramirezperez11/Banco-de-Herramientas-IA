@@ -1,4 +1,5 @@
 import './globals.css';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'FRP Digital Tickets S.R.L.',
@@ -16,9 +17,18 @@ export default function RootLayout({ children }) {
               <h1 className="text-xl font-semibold">Entradas digitales sin filas</h1>
             </div>
             <nav className="flex gap-4 text-sm">
-              <a href="#eventos" className="hover:text-brand-50">Eventos</a>
-              <a href="#comprar" className="hover:text-brand-50">Comprar</a>
-              <a href="#organizador" className="hover:text-brand-50">Organizadores</a>
+              <Link href="/" className="hover:text-brand-50">
+                Inicio
+              </Link>
+              <Link href="/login" className="hover:text-brand-50">
+                Login
+              </Link>
+              <Link href="/compra" className="hover:text-brand-50">
+                Compra
+              </Link>
+              <Link href="/tickets" className="hover:text-brand-50">
+                Tickets
+              </Link>
             </nav>
           </div>
         </div>

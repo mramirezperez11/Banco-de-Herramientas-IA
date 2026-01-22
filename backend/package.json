@@ -4,9 +4,13 @@
   "description": "Backend API para FRP Digital Tickets S.R.L.",
   "main": "src/index.js",
   "type": "commonjs",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "scripts": {
     "dev": "node src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "jest"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -16,5 +20,9 @@
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.11.5",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
   }
 }
